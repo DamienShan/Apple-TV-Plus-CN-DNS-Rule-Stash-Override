@@ -1,0 +1,23 @@
+name: Futu Direct Override
+desc: 让富途牛牛 / Futu / moomoo 相关域名全部直连，保守版
+
+rules:
+  - DOMAIN-SUFFIX,futunn.com,DIRECT
+  - DOMAIN-SUFFIX,futu5.com,DIRECT
+  - DOMAIN-SUFFIX,futuhk.com,DIRECT
+  - DOMAIN-SUFFIX,futucdn.com,DIRECT
+  - DOMAIN-SUFFIX,futunncdn.com,DIRECT
+  - DOMAIN-SUFFIX,futunnopen.com,DIRECT
+
+  - DOMAIN-SUFFIX,moomoo.com,DIRECT
+  - DOMAIN-SUFFIX,moomoo.com.sg,DIRECT
+  - DOMAIN-SUFFIX,moomoo.com.au,DIRECT
+  - DOMAIN-SUFFIX,moomoo.com.my,DIRECT
+  - DOMAIN-SUFFIX,moomoo.ca,DIRECT
+  - DOMAIN-SUFFIX,moomoo.io,DIRECT
+
+  - DOMAIN-SUFFIX,openapi.futunn.com,DIRECT
+  - DOMAIN-SUFFIX,openapi.moomoo.com,DIRECT
+
+  - DOMAIN-KEYWORD,futunn,DIRECT
+  - DOMAIN-KEYWORD,moomoo,DIRECT
