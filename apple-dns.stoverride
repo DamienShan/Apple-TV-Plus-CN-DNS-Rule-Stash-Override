@@ -1,0 +1,7 @@
+name: Apple DNS Override
+desc: 指定 iTunes / Apple TV 域名使用 1.1.1.1 解析
+
+dns:
+  nameserver-policy:
+    "+.itunes.apple.com": 1.1.1.1
+    "+.tv.apple.com": 1.1.1.1
