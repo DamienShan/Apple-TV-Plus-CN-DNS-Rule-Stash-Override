@@ -5,3 +5,4 @@ dns:
   nameserver-policy:
     "+.itunes.apple.com": 1.1.1.1
     "+.tv.apple.com": 1.1.1.1
+    "+.hbomax.com": 1.1.1.1
