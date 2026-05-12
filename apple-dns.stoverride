@@ -5,11 +5,3 @@ dns:
   nameserver-policy:
     "+.itunes.apple.com": 1.1.1.1
     "+.tv.apple.com": 1.1.1.1
-    "+.hbomax.com": 1.1.1.1
-    "+.max.com": 1.1.1.1
-    "+.hbo.com": 1.1.1.1
-    "+.api.hbo.com": 1.1.1.1
-    "+.warnermediacdn.com": 1.1.1.1
-    "+.maxgo.com": 1.1.1.1
-    "+.turner.com": 1.1.1.1
-    "+.cdn.turner.com": 1.1.1.1
