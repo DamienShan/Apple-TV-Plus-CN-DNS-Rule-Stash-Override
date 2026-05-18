@@ -3,24 +3,12 @@ desc: 富途牛牛 A股行情强制大陆直连
 
 dns:
   nameserver-policy:
-    "+.futunn.com":
-      - 223.5.5.5
-      - 119.29.29.29
-
-    "+.futu5.com":
-      - 223.5.5.5
-      - 119.29.29.29
-
-    "+.futuhk.com":
-      - 223.5.5.5
-      - 119.29.29.29
-
-    "+.moomoo.com":
-      - 223.5.5.5
-      - 119.29.29.29
+    "+.futunn.com": "223.5.5.5"
+    "+.futu5.com": "223.5.5.5"
+    "+.futuhk.com": "223.5.5.5"
+    "+.moomoo.com": "223.5.5.5"
 
 rules:
-  # ===== 富途 / moomoo =====
   - DOMAIN-SUFFIX,futunn.com,DIRECT
   - DOMAIN-SUFFIX,futu5.com,DIRECT
   - DOMAIN-SUFFIX,futuhk.com,DIRECT
@@ -31,9 +19,5 @@ rules:
   - DOMAIN-SUFFIX,moomoo.com,DIRECT
   - DOMAIN-SUFFIX,moomoo.io,DIRECT
 
-  # ===== 行情 / API =====
   - DOMAIN-KEYWORD,futunn,DIRECT
   - DOMAIN-KEYWORD,moomoo,DIRECT
-
-  # ===== QUIC 避免被代理 =====
-  - AND,((NETWORK,udp),(DST-PORT,443)),DIRECT
