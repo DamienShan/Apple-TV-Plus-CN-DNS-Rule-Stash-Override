@@ -1,0 +1,30 @@
+mode: rule
+
+tun:
+  enable: true
+  stack: system
+  auto-route: true
+  auto-detect-interface: true
+  bypass-lan: true
+
+dns:
+  enable: true
+  enhanced-mode: redir-host
+
+  fake-ip-filter:
+    - '*.local'
+    - '*.lan'
+    - '*.spotify.com'
+    - '*.spotifycdn.com'
+
+rules:
+  # multicast / mDNS / SSDP
+  - IP-CIDR,224.0.0.0/4,DIRECT,no-resolve
+
+  # 本地域名
+  - DOMAIN-SUFFIX,local,DIRECT
+  - DOMAIN-SUFFIX,lan,DIRECT
+
+  # Spotify Connect
+  - DOMAIN-SUFFIX,spotify.com,DIRECT
+  - DOMAIN-SUFFIX,spotifycdn.com,DIRECT
